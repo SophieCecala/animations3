@@ -1,0 +1,27 @@
+@keyframes anim1{
+ 	0% {margin-left: 3px;}
+ 	50% {margin-left: 200px;}
+ 	100% {margin-left: 3px;}
+
+}
+@keyframes anim2{
+ 	from {background: white ;}
+ 	to {background: yellow;}
+}
+#d1 {
+	animation-name: anim1, anim2;
+	animation-duration: 4s, 1s;
+	animation-iteration-count: infinite, infinite;
+	/*animation-timing-function: ease;
+	animation-delay: 0s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: backwards;
+	animation-direction: normal;*/
+	animation-play-state: running;
+}
+
+#d1 {
+	height: 50px;
+	width: 50px;
+	border: 1px solid yellow;
+}
